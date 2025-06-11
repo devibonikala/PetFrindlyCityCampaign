@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet-Friendly City Campaign</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Pet-Friendly City Campaign</h1>
+    <p>Helping cities become welcoming to pets and pet lovers</p>
+  </header>
+
+  <nav>
+    <a href="#about">Why</a>
+    <a href="#initiatives">Initiatives</a>
+    <a href="#supporters">Supporters</a>
+    <a href="#join">Join</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="auth-buttons">
+    <span id="welcome"></span>
+    <button onclick="showModal('login')">Login</button>
+    <button onclick="showModal('signup')">Sign Up</button>
+    <button onclick="logout()" id="logoutBtn" style="display:none;">Logout</button>
+  </div>
+
+  <div class="hero">
+    <h1 id="heroText">Make Cities Happier for Pets!</h1>
+  </div>
+
+  <section id="about">
+    <h2>Why a Pet-Friendly City?</h2>
+    <p>
+      Pet-friendly cities are happier, healthier, and more connected. They promote well-being, social engagement, and respect for animals.
+    </p>
+  </section>
+
+  <section id="initiatives">
+    <h2>Our Initiatives</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Pet Parks</h3>
+        <p>Open spaces for dogs to run and play safely.</p>
+      </div>
+      <div class="card">
+        <h3>Transit Access</h3>
+        <p>Allowing pets in city metros, buses, and rickshaws.</p>
+      </div>
+      <div class="card">
+        <h3>Pet-Friendly Cafes</h3>
+        <p>Outdoor and indoor spaces where pets are welcome.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="supporters">
+    <h2>Supported By</h2>
+    <ul>
+      <li>🏙️ Municipal Leaders</li>
+      <li>🐾 Pet Clinics & Animal NGOs</li>
+      <li>🌳 Urban Planning Groups</li>
+    </ul>
+  </section>
+
+  <section id="join">
+    <h2>Join Us</h2>
+    <p>Sign our petition or volunteer to help bring the change your furry friend deserves!</p>
+    <button style="padding: 0.6rem 1.2rem; background-color: #2e7d32; color: white; border: none; border-radius: 5px;">🐶 Join Campaign</button>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:hello@petfriendlycity.org">hello@petfriendlycity.org</a></p>
+    <p>Instagram: @PetFriendlyCity</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Pet-Friendly City Campaign. All rights reserved.</p>
+  </footer>
+
+  <!-- Login Modal -->
+  <div class="modal" id="loginModal">
+    <div class="modal-content">
+      <h3>Login</h3>
+      <input type="text" id="loginUser" placeholder="Username" />
+      <input type="password" id="loginPass" placeholder="Password" />
+      <button onclick="login()">Login</button>
+    </div>
+  </div>
+
+  <!-- Signup Modal -->
+  <div class="modal" id="signupModal">
+    <div class="modal-content">
+      <h3>Sign Up</h3>
+      <input type="text" id="signupUser" placeholder="Username" />
+      <input type="password" id="signupPass" placeholder="Password" />
+      <button onclick="signup()">Sign Up</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
